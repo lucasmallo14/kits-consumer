@@ -1,0 +1,8 @@
+name = "kits-consumer"
+main = "src/consumer.ts"
+compatibility_date = "2025-08-15"
+
+# Este binding declara que el Worker es CONSUMER de la cola clone-jobs
+[[queues.consumers]]
+queue = "clone-jobs"
+binding = "CLONE_JOBS"
